@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    {% block body %}
+<body>
+<form action="http://99.198.157.244:5000/qms" method="post">
+    username:<br>
+    <input type="text" name="username"><br>
+    password:<br>
+    <input type="text" name="password"><br>
+    full link to game on quia:<br>
+    <input type="text" name="link"><br>
+    gametype:<br>
+    <input type="radio" name="gametype" value="j"> java games<br>
+    <input type="radio" name="gametype" value="c"> challenge board<br>
+    # of minutes:<br>
+    <input type="radio" name="time" value="1"> test<br>
+    <input type="radio" name="time" value="14"> ten minutes<br>
+    <input type="radio" name="time" value="43"> thirty minutes<br>
+    <input type="radio" name="time" value="86"> one hour<br>
+    <input type="submit" value="start">
+</form>
+    {% endblock %}
+</body>
+</html>
